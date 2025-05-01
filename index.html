@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>စာမေးပွဲဖြေဆိုရန်</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>စာမေးပွဲဖြေဆိုရန်</h1>
+            <div class="timer">ကျန်ရှိသောအချိန်: <span id="time">30:00</span></div>
+        </header>
+
+        <div class="exam-info">
+            <div class="student-info">
+                <label for="name">အမည်:</label>
+                <input type="text" id="name" placeholder="သင့်အမည်ကိုရိုက်ထည့်ပါ">
+                
+                <label for="id">ကျောင်းသားအမှတ်:</label>
+                <input type="text" id="id" placeholder="သင့်ကျောင်းသားအမှတ်ကိုရိုက်ထည့်ပါ">
+            </div>
+            
+            <div class="exam-details">
+                <h3>မေးခွန်းအချက်အလက်</h3>
+                <p>စုစုပေါင်းမေးခွန်း: <span id="total-questions">10</span></p>
+                <p>အချိန်: 30 မိနစ်</p>
+            </div>
+        </div>
+
+        <div class="question-container" id="question-container">
+            <!-- Questions will be loaded here by JavaScript -->
+        </div>
+
+        <div class="controls">
+            <button id="prev-btn" class="btn">ယခင်မေးခွန်း</button>
+            <button id="next-btn" class="btn">နောက်မေးခွန်း</button>
+            <button id="submit-btn" class="btn submit-btn">ဖြေဆိုပြီး</button>
+        </div>
+    </div>
+
+    <div class="modal" id="result-modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>သင့်ရလဒ်</h2>
+            <div id="result-content">
+                <!-- Results will be displayed here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
